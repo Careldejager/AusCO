@@ -9,16 +9,9 @@
   ],
   "attributes": {
     "lastModification": {
-<<<<<<< Updated upstream
       "actor": "Carel",
-      "timestamp": "2022-08-19T00:40:44Z"
+      "timestamp": "2022-08-19T05:01:28Z"
     },
-    "lastModificationSignature": "6cfa9e0decb3bc9750c1ff390e453202ca493467e32b9cfa1f8021361035f952"
-=======
-      "actor": "external",
-      "timestamp": "2022-08-19T04:21:43Z"
-    },
-    "lastModificationSignature": "088444bbeae532c9f1ea4e690e1b3bc3e79935c778f99f0c700f3b845cfe2861"
->>>>>>> Stashed changes
+    "lastModificationSignature": "60742c3f7613d9e8e272edf296e6bf4856c30e172334ff1e7f05c53bc44f078d"
   }
 }
