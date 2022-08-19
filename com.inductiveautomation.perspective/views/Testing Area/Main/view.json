@@ -71,6 +71,76 @@
           }
         },
         "type": "ia.chart.gauge"
+      },
+      {
+        "meta": {
+          "name": "LedDisplay"
+        },
+        "position": {
+          "height": 32,
+          "rotate": {
+            "anchor": "-42% 63%"
+          },
+          "width": 133,
+          "x": 111.5,
+          "y": 271
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "expression": "{[System]Gateway/Performance/Memory Usage} / 100000000"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "#.## Gb",
+                  "type": "format"
+                }
+              ],
+              "type": "expr"
+            }
+          }
+        },
+        "type": "ia.display.led-display"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 32,
+          "width": 145,
+          "x": 105.5,
+          "y": 303
+        },
+        "props": {
+          "text": "Memory Uasage",
+          "textStyle": {
+            "fontSize": 12,
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 32,
+          "width": 145,
+          "x": 105,
+          "y": 21
+        },
+        "props": {
+          "text": "CPU Uasage",
+          "textStyle": {
+            "fontSize": 12,
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.display.label"
       }
     ],
     "meta": {
