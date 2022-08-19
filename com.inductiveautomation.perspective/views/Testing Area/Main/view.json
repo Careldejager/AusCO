@@ -1,0 +1,81 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Gauge"
+        },
+        "position": {
+          "height": 175,
+          "width": 300,
+          "x": 28,
+          "y": 61
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "config": {
+                "expression": "{[System]Gateway/Performance/CPU Usage} * 10"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "#.## %",
+                  "type": "format"
+                }
+              ],
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "backgroundColor": "",
+          "innerAxis": {
+            "data": "secondaryValue",
+            "maxValue": 80,
+            "percentRadius": 85,
+            "show": false,
+            "width": 1
+          },
+          "outerAxis": {
+            "data": "value",
+            "percentRadius": 100,
+            "ranges": [
+              {
+                "color": "#77B6D8",
+                "end": 80,
+                "start": 0,
+                "width": 8
+              },
+              {
+                "color": "#EA3D35",
+                "end": 100,
+                "start": 80,
+                "width": 12
+              },
+              {
+                "color": "#7A6BD5",
+                "end": 120,
+                "start": 105,
+                "width": 16
+              }
+            ],
+            "show": true,
+            "width": 1
+          },
+          "style": {
+            "classes": []
+          }
+        },
+        "type": "ia.chart.gauge"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}
