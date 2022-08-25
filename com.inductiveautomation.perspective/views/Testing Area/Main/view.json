@@ -117,7 +117,7 @@
         "props": {
           "text": "Memory Uasage",
           "textStyle": {
-            "fontSize": 12,
+            "fontSize": 14,
             "textAlign": "center"
           }
         },
